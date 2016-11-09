@@ -1,0 +1,68 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+
+
+/* font include*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:400,200,300,700,600,800,900);
+/* font include*/
+
+/*colors-included*/
+
+$color-dark-gray: #1E1E23;
+$color-green: #81B441;
+$color-light-gray: #686869;
+$color-dark-blue: #2a2c36;
+$color-white: #fff;
+
+
+
+/*colors-included*/
+
+
+.pushable.start-page{
+ font-family: 'Martel Sans', sans-serif;
+ font-family: 'Montserrat', sans-serif;
+}
+
+
+body, html {
+  height: auto!important;
+}
+
+.mobile-only{
+ @media (min-width: 768px){
+  display: none !important;
+}
+}
+.desktop-only{
+  @media (max-width: 767px){
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 767px){
+  header{
+    .ui.fixed.menu{
+      display: none!important;
+    }
+  }
+}
+@media (min-width: 768px){
+  .ui.left.vertical.menu.sidebar.hidden.overlay.visible,.mobile-logo,.mobile-btn{
+    display: none!important;
+  }
+}
+
+
+/* main-styles*/
+
+main{
+  margin-top: 92px;
+}
+
